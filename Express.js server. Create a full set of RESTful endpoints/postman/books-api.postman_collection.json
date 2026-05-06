@@ -1,0 +1,62 @@
+{
+  "info": {
+    "name": "Books API",
+    "_postman_id": "c1f5c6de-7b34-4cc2-9bb0-7c776f7f8a01",
+    "description": "Collection for testing the Express books API endpoints.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Books",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3000/api/books"
+      }
+    },
+    {
+      "name": "Get Book By Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3000/api/books/b1"
+      }
+    },
+    {
+      "name": "Create Book",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Atomic Habits\",\n  \"author\": \"James Clear\",\n  \"year\": 2018,\n  \"genre\": \"Self-Help\"\n}"
+        },
+        "url": "http://localhost:3000/api/books"
+      }
+    },
+    {
+      "name": "Update Book",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Atomic Habits - Updated\"\n}"
+        },
+        "url": "http://localhost:3000/api/books/b1"
+      }
+    },
+    {
+      "name": "Delete Book",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:3000/api/books/b1"
+      }
+    }
+  ]
+}

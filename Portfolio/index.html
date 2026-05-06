@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio showcasing projects, skills, and contact details."
+    />
+    <title>Portfolio | Your Name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="topbar" aria-label="Primary">
+        <a class="brand" href="#home">Your Name</a>
+        <div class="topbar-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <section id="home" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Frontend Developer</p>
+          <h1>Designing modern, responsive web experiences with clean HTML and CSS.</h1>
+          <p class="hero-text">
+            I build accessible interfaces, thoughtful layouts, and polished landing pages that
+            look sharp on every screen.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Profile summary">
+          <p class="card-label">Available for freelance</p>
+          <dl>
+            <div>
+              <dt>Focus</dt>
+              <dd>Semantic HTML5, CSS Grid, Flexbox</dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>Open to remote opportunities</dd>
+            </div>
+            <div>
+              <dt>Experience</dt>
+              <dd>UI design systems and responsive layouts</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section id="about" class="section split-layout">
+        <div>
+          <p class="section-tag">About</p>
+          <h2>Built with clarity, structure, and a responsive-first mindset.</h2>
+        </div>
+        <p>
+          This portfolio highlights a professional presentation with accessible headings, clear
+          navigation, and a layout that adapts from mobile to desktop using CSS Grid and Flexbox.
+        </p>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p class="section-tag">Projects</p>
+          <h2>Selected work</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Brand Landing Page</h3>
+            <p>
+              A clean product introduction page with strong typography, feature highlights, and a
+              responsive call to action.
+            </p>
+          </article>
+          <article class="project-card">
+            <h3>Service Showcase</h3>
+            <p>
+              A grid-based layout for presenting services, testimonials, and key differentiators in
+              a compact, scannable format.
+            </p>
+          </article>
+          <article class="project-card">
+            <h3>Contact Hub</h3>
+            <p>
+              A minimal contact section with clear hierarchy and strong mobile spacing for quick
+              conversions.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills-section">
+        <div class="section-heading">
+          <p class="section-tag">Skills</p>
+          <h2>Tools and strengths</h2>
+        </div>
+        <ul class="skills-list" aria-label="Skills list">
+          <li>Semantic HTML5</li>
+          <li>CSS Grid</li>
+          <li>Flexbox</li>
+          <li>Responsive design</li>
+          <li>Accessibility basics</li>
+          <li>Visual hierarchy</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div>
+          <p class="section-tag">Contact</p>
+          <h2>Let’s build something thoughtful.</h2>
+        </div>
+        <a class="button primary" href="mailto:hello@example.com">hello@example.com</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Your Name. Crafted with semantic HTML and modern CSS.</p>
+    </footer>
+  </body>
+</html>
