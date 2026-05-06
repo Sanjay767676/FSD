@@ -15,7 +15,9 @@
 
 - `GET /health`
 - `GET /api/books`
+- `GET /api/book/get`
 - `GET /api/books/:id`
+- `GET /api/book/get/:id`
 - `POST /api/books`
 - `PUT /api/books/:id`
 - `DELETE /api/books/:id`

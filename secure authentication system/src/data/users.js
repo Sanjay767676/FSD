@@ -1,4 +1,14 @@
-const users = [];
+import bcrypt from 'bcryptjs';
+
+const users = [
+  {
+    id: 'demo-user-1',
+    name: 'Amina Khan',
+    email: 'amina@example.com',
+    passwordHash: bcrypt.hashSync('Password123!', 12),
+    createdAt: new Date().toISOString(),
+  },
+];
 
 export function findUserByEmail(email) {
   return users.find((user) => user.email === email.toLowerCase()) || null;

@@ -10,6 +10,8 @@ import {
 const router = Router();
 
 router.get('/', getBooks);
+router.get('/get', getBooks);
+router.get('/get/:id', getBookById);
 router.get('/:id', getBookById);
 router.post('/', createBook);
 router.put('/:id', updateBook);

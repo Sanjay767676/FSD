@@ -14,6 +14,7 @@ app.get('/health', (req, res) => {
   res.json({ ok: true, service: 'mongodb-atlas-express-api' });
 });
 
+app.use('/api/book', bookRoutes);
 app.use('/api/books', bookRoutes);
 
 app.use((req, res) => {

@@ -11,6 +11,7 @@ app.get('/health', (req, res) => {
   res.json({ ok: true, service: 'books-api' });
 });
 
+app.use('/api/book', booksRoutes);
 app.use('/api/books', booksRoutes);
 
 app.use((req, res) => {

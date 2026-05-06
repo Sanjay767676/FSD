@@ -8,6 +8,20 @@ router.get('/', (req, res) => {
   res.json({ count: getBooks().length, books: getBooks() });
 });
 
+router.get('/get', (req, res) => {
+  res.json({ count: getBooks().length, books: getBooks() });
+});
+
+router.get('/get/:id', (req, res) => {
+  const book = findBookById(req.params.id);
+
+  if (!book) {
+    return res.status(404).json({ message: 'Book not found.' });
+  }
+
+  return res.json(book);
+});
+
 router.get('/:id', (req, res) => {
   const book = findBookById(req.params.id);
 

@@ -12,6 +12,17 @@
 - `POST /api/auth/login`
 - `GET /api/private` (protected)
 
+## Demo login
+
+Use these credentials with the React frontend or a direct `POST /api/auth/login` request:
+
+```json
+{
+  "email": "amina@example.com",
+  "password": "Password123!"
+}
+```
+
 ## Sample body
 
 ```json
